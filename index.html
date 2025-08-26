@@ -1247,6 +1247,37 @@ h2::after {
 
 .rules-section ul#rulesList{max-height:60vh;overflow-y:auto;padding-right:10px}
 @media(max-width:600px){.rules-section ul#rulesList{max-height:50vh}}
+
+/* Instagram footer (appended without changing existing structure) */
+.insta-footer{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:24px 16px;
+  margin-top:32px;
+}
+.insta-footer .insta-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:64px;
+  height:64px;
+  text-decoration:none;
+  transition: transform .25s ease;
+}
+.insta-footer .insta-icon:hover{ transform: scale(1.1); }
+/* Gradient Instagram glyph via inline SVG fill */
+.insta-footer .insta-label{
+  text-align:center;
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  line-height:1.4;
+}
+
 </style>
 </head>
 <body>
@@ -1266,7 +1297,9 @@ h2::after {
     <li><a href="javascript:void(0)" onclick="scrollToSection('events'); closeMobileMenu();">Events</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToSection('guidelines'); closeMobileMenu();">General Guidelines</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToSection('contact'); closeMobileMenu();">Contact</a></li>
-  </ul>
+  
+      <li><a href="javascript:void(0)" onclick="scrollToSection('instagram-message')">Social Media</a></li>
+    </ul>
 </div>
 
 <!-- Desktop Navigation -->
@@ -1276,7 +1309,9 @@ h2::after {
     <li><a href="javascript:void(0)" onclick="scrollToSection('events')">Events</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToSection('guidelines')">General Guidelines</a></li>
     <li><a href="javascript:void(0)" onclick="scrollToSection('contact')">Contact</a></li>
-  </ul>
+  
+        <li><a href="javascript:void(0)" onclick="scrollToSection('instagram-message')">Social Media</a></li>
+    </ul>
 </nav>
 
 <div class="main-content">
@@ -1352,22 +1387,22 @@ h2::after {
   <div class="events">
     <div class="event-card" onclick="showRules('heist-council')">
       <h3>The Heist Council - Best Management Team</h3>
-      <p>💰 1st Prize: ₹12,000 | 2nd Prize: ₹6,000 | 3rd Prize: ₹2,000</p>
+      <p>💰 1st Prize: ₹25,000 | 2nd Prize: ₹15,000 | 3rd Prize: ₹10,000</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('dark-knight-business')">
       <h3>The Dark Knight of Business - Business Quiz</h3>
-      <p>💰 Prize details to be announced</p>
+      <p>💰 1st Prize: ₹10,000 | 2nd Prize: ₹6,000 | 3rd Prize: ₹2,000</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('breaking-bids')">
       <h3>Breaking Bids - IPL Auction</h3>
-      <p>💰 1st Prize: ₹15,000 | 2nd Prize: ₹7,000 | 3rd Prize: ₹3,000</p>
+      <p>💰 1st Prize: ₹14,000 | 2nd Prize: ₹7,000 | 3rd Prize: ₹5,000</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('fast-goal')">
       <h3>Fast Goal : 3V3 Drift - 3V3 Football</h3>
-      <p>💰 1st Prize: ₹12,000 | 2nd Prize: ₹6,000 | 3rd Prize: ₹2,000</p>
+      <p>💰 1st Prize: ₹9,000 | 2nd Prize: ₹5,000 | 3rd Prize: ₹2,000</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('dance-of-dragons')">
@@ -1377,7 +1412,7 @@ h2::after {
     </div>
     <div class="event-card" onclick="showRules('infinity-frames')">
       <h3>Infinity Frames - Photography Contest</h3>
-      <p>💰 1st Prize: ₹2,500 | 2nd Prize: ₹1,000</p>
+      <p>💰 1st Prize: ₹2,000 | 2nd Prize: ₹1,500</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('squad-game')">
@@ -1392,7 +1427,7 @@ h2::after {
     </div>
     <div class="event-card" onclick="showRules('someone-in-crowd')">
       <h3>Someone in the Crowd - Duet Song Competition</h3>
-      <p>💰 Prize details to be announced</p>
+      <p>💰 1st Prize: ₹4,000 | 2nd Prize: ₹2,500</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
   </div>
@@ -1401,12 +1436,12 @@ h2::after {
   <div class="events">
     <div class="event-card" onclick="showRules('wolf-street-wizards')">
       <h3>Wolf Street Wizards - Product Launch</h3>
-      <p>💰 Prize details to be announced</p>
+      <p>💰 1st Prize: ₹5,000 | 2nd Prize: ₹2,000</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
     <div class="event-card" onclick="showRules('dark-knight-business-school')">
       <h3>The Dark Knight of Business - Business Quiz</h3>
-      <p>💰 Prize details to be announced</p>
+      <p>💰 1st Prize: ₹5,000 | 2nd Prize: ₹2,500 | 3rd Prize: ₹1,500</p>
       <div class="registration-info">Click to view rules and register!</div>
     </div>
   </div>
@@ -1574,7 +1609,7 @@ const rulesData = {
       'In case of a tie, the winner will be decided by penalty shootouts',
       'Use of boots with metal studs, jewellery, or accessories that may cause injury is strictly prohibited',
       'Rough play, misconduct, or arguments with referees will result in immediate disqualification or suspension of the player',
-      "The referee's decision will be final and binding for all matches",
+      'The referee\'s decision will be final and binding for all matches',
       'The organizing committee reserves the right to modify rules if necessary for the smooth conduct of the event'
     ]
   },
@@ -1591,7 +1626,7 @@ const rulesData = {
     rules: [
       'A team shall consist of 4 members',
       'A team should be registered as a whole',
-      'The registration fee is Rs. 1000/- per team',
+      'The registration fee is ₹1000 per team',
       'Teams should register in advance. Spot registration is available subject to availability of seats',
       'Payments must be finalized prior to the event',
       'Any number of teams can participate from the same college',
@@ -1600,15 +1635,15 @@ const rulesData = {
       'There will be a total of 3 rounds',
       'Participants must report to the prescribed venue on time before the event begins',
       'Clarifications, if required, will be addressed by the co-ordinators prior to each round',
-      'Teams must carry a laptop and smartphone with a stable internet connection, but the same may subjected to restrictions',
+      'Teams must carry a laptop and smartphone with a stable internet connection, but the same may be subjected to restrictions',
       'Decisions of the judges will be final and binding',
       'Any form of malpractice or misbehaviour will result in immediate disqualification',
       'E-certificates will be provided to all participants',
-      'Details and guidelines regarding each round will be accessible via the following QR code. Every team must be aware of the guidelines before reaching the event'
+      'Details and guidelines regarding each round will be accessible via the provided QR code. Every team must be aware of the guidelines before reaching the event'
     ]
   },
   'squad-game': {
-    title: 'Squad Game - BGMI Tournament',
+    title: 'Squad Game - BGMI Tournament (SB College Students Only)',
     fee: '₹200 per team',
     prizes: [
       { position: '1st Prize', amount: '₹2,000' },
@@ -1622,19 +1657,16 @@ const rulesData = {
       'Registration closes on 14-09-2025',
       'Each match will be played in TPP/Squad mode unless stated otherwise',
       'At least 3 players should join the match',
-      'Every match will be conducted as a knockout match, and only the winning team progresses to the next round',
+      'Every match will be conducted as a knockout match; only the winning team progresses to the next round',
       'Map selection will be decided by the admin before each round (Erangel, Miramar, Sanhok, Vikendi, etc.)',
-      'Players must use their own accounts and devices. Any use of guest accounts or borrowed accounts is not allowed',
+      'Players must use their own accounts and devices. Guest/borrowed accounts are not allowed',
       'A maximum of one re-entry card per player is allowed (if applicable in the format)',
-      'If an opponent or team fails to join the lobby within the allotted time, the other team will be given a walkover win',
-      'Teaming or unfair gameplay (e.g., teaming with opponents, using cheats, exploiting glitches) will result in immediate disqualification',
-      'Intentional camping without engagement for prolonged periods is discouraged; video proof of unfair play can lead to admin intervention',
-      "In case of any technical or dispute issues, players must take a screenshot or video proof and report immediately to the admin (admin's decision will be final)",
+      'If a team fails to join the lobby within the allotted time, the opponent will be given a walkover win',
+      'Teaming or unfair gameplay (cheats, exploits, teaming with opponents) will result in immediate disqualification',
+      'Intentional camping without engagement for prolonged periods is discouraged; valid video proof can lead to admin intervention',
+      'In case of technical/dispute issues, players must submit screenshot or video proof and report immediately to the admin (admin\'s decision will be final)',
       'Further details will be informed through WhatsApp groups created for the event',
-      '**Result Submission Guidelines:**',
-      '- Take a screenshot of the final result screen (rank and kills) immediately after the match ends',
-      '- Send the screenshot to the admin group along with the team name and player IDs of the winners and losers',
-      '- Failure to submit results within the given time frame may lead to disqualification'
+      'Result Submission: Take a screenshot of the final result screen (rank and kills) immediately after the match and send it to the admin group along with team name and player IDs of winners and losers. Failure to submit results in time may lead to disqualification'
     ]
   },
   'dark-knight-business': {
@@ -1652,13 +1684,14 @@ const rulesData = {
       'There is no restriction on the number of teams from the same institution',
       'The event is open to participants from all streams',
       'Only the top 4 teams will qualify for the final rounds',
-      'The subject of the event will comprise business-related general knowledge (40%) and business-related current affairs (60%). The current affairs portion will cover the period from 1 January 2025 to 31 August 2025',
+      'The subject will comprise business-related general knowledge (40%) and business-related current affairs (60%)',
+      'Current affairs portion will cover the period from 1 January 2025 to 31 August 2025',
       'The use of electronic devices during the event is strictly prohibited',
       'Decisions made by the quiz master are final and binding',
       'Any form of malpractice will result in immediate disqualification',
       'All necessary materials will be provided by the college',
       'Participants are required to report to the venue at least 15 minutes prior to the scheduled start time',
-      'Participants must carry their institutional ID card and an authorization letter from their institution',
+      'Participants must carry their institutional ID card and an authorization letter from their institution (if applicable)',
       'Number of rounds will be determined based on the number of participating teams'
     ]
   },
@@ -1677,7 +1710,8 @@ const rulesData = {
       'There is no restriction on the number of teams from the same institution',
       'The event is open to participants from all streams',
       'Only the top 4 teams will qualify for the final rounds',
-      'The subject of the event will comprise business-related general knowledge (40%) and business-related current affairs (60%). The current affairs portion will cover the period from 1 January 2025 to 31 August 2025',
+      'The subject will comprise business-related general knowledge (40%) and business-related current affairs (60%)',
+      'Current affairs portion will cover the period from 1 January 2025 to 31 August 2025',
       'The use of electronic devices during the event is strictly prohibited',
       'Decisions made by the quiz master are final and binding',
       'Any form of malpractice will result in immediate disqualification',
@@ -1698,35 +1732,25 @@ const rulesData = {
     faculty: 'Ms. Sherin Pius - 7592923737',
     student: 'Navya Jimmy - 8891163907',
     rules: [
-      '**1. Eligibility & Team Composition**',
-      '- Open to registered college students only and one team is allowed from a college',
-      '- Team size: Minimum 6 and maximum 10 members (during the performance there should only be at most 4 members in the backstage)',
-      '- A preliminary round will be conducted if necessary, where the participants must submit a dance video spanning a duration of 2 mins, a day after registration closes (Sept 13, 2025). The registration amount will be refunded if rejected. The student coordinator will contact the team to inform if preliminary round will be conducted, after registration closes',
-      '- September 12, 2025 will be the last date for registration',
-      '- Contact number of team in-charges should be given',
-      '- All team in charges must assemble before the counter to draw lots',
-      '- All participants must carry their college id cards',
-      '- Green rooms will be provided (Any damages caused must be compensated by the respective teams)',
-      '**2. Theme Guidelines**',
-      '- Teams must base their performance on a theme',
-      '- The theme must be clear to the audience and judges',
-      '**3. Time Limit**',
-      '- Performance duration: 10 minutes (3 minutes for stage preparation included)',
-      '- Exceeding time limit will result in penalty points',
-      '**4. Music & Props**',
-      '- Teams must submit audio tracks in MP3 format at least 2 days before the event, a video for display on the LED is also needed if you wish to use one',
-      '- No live singing is allowed',
-      '- Props are allowed but must be safe, non-flammable, and cleaned up after use',
-      '- Any injury sustained from the props must be attended to by the respective teams themselves. Dangerous items (fire, sharp objects, water, powders) are strictly prohibited unless cleared by the committee',
-      '- Participants are solely responsible for their belongings and props',
-      '**5. Costume & Presentation**',
-      '- Costumes must align with the theme',
-      '- Outfits should be decent and respectful—no offensive visuals or words',
-      '**6. Discipline**',
-      '- Vulgarity, obscenity, or any disrespectful gesture will lead to disqualification',
-      '- Teams must be ready backstage 15 minutes before their slot',
-      '**7. Decision of Judges**',
-      "- Judges' decision will be final and binding"
+      'Open to registered college students only; one team is allowed from a college',
+      'Team size: Minimum 6 and maximum 10 members (during the performance at most 4 members allowed backstage)',
+      'A preliminary round will be conducted if necessary; teams must submit a 2-minute dance video a day after registration closes (Sept 13, 2025). Registration amount will be refunded if rejected. The student coordinator will inform if prelims are conducted after registration closes',
+      'September 12, 2025 will be the last date for registration',
+      'Contact number of team in-charges should be given',
+      'All team in-charges must assemble before the counter to draw lots',
+      'All participants must carry their college ID cards',
+      'Green rooms will be provided (any damages caused must be compensated by the respective teams)',
+      'Teams must base their performance on a theme; the theme must be clear to audience and judges',
+      'Performance duration: 10 minutes (including 3 minutes for stage preparation). Exceeding the time limit will result in penalty points',
+      'Teams must submit audio tracks in MP3 format at least 2 days before the event; a video for LED can be submitted if desired',
+      'No live singing is allowed',
+      'Props are allowed but must be safe, non-flammable, and cleaned up after use',
+      'Dangerous items (fire, sharp objects, water, powders) are strictly prohibited unless cleared by the committee',
+      'Participants are solely responsible for their belongings and props',
+      'Costumes must align with the theme; outfits should be decent and respectful—no offensive visuals or words',
+      'Vulgarity, obscenity, or any disrespectful gesture will lead to disqualification',
+      'Teams must be ready backstage 15 minutes before their slot',
+      'Judges\' decision will be final and binding'
     ]
   },
   'someone-in-crowd': {
@@ -1739,30 +1763,23 @@ const rulesData = {
     faculty: 'Ms. Bency Joseph - 8330063997',
     student: 'Nadhiya Nejim - 8714111086',
     rules: [
-      '**1. Eligibility & Team Composition**',
-      '- Open to registered college students only',
-      '- Each team must consist of exactly 2 members',
-      '- Spot registration is possible subject to availability of slots',
-      '- Contact numbers of team in-charges must be provided',
-      '- All the team members must assemble before the counter to draw lots for performance order',
-      '- Valid college ID is mandatory for participation and at the time of registration',
-      '**2. Song Guidelines**',
-      '- Only Hindi, Malayalam, or Tamil film songs from any genre are permitted for the duet performance',
-      '- Song lyrics must be clean and respectful—no offensive or derogatory content',
-      '**3. Time Limit**',
-      '- Performance duration: Each team will be allotted a total of 7 minutes (including 1 minute for stage setup)',
-      '- The team exceeding the time limit will be disqualified',
-      '**4. Music & Accompaniment**',
-      '- Participants should perform with karaoke tracks (MP3 format) that must be sent to the event coordinators at least the day before the event',
-      '- No pre-recorded main vocals are allowed in karaoke tracks',
-      '**5. Discipline**',
-      '- Teams must be ready backstage 15 minutes before their slot',
-      '**6. Decision of Judges**',
-      "- The judges' decision will be final and binding"
+      'Open to registered college students only',
+      'Each team must consist of exactly 2 members',
+      'Spot registration is possible subject to availability of slots',
+      'Contact numbers of team in-charges must be provided',
+      'All team members must assemble before the counter to draw lots for performance order',
+      'Valid college ID is mandatory for participation and at the time of registration',
+      'Only Hindi, Malayalam, or Tamil film songs from any genre are permitted for the duet performance',
+      'Song lyrics must be clean and respectful—no offensive or derogatory content',
+      'Performance duration: 7 minutes total (including 1 minute for stage setup). Exceeding time limit will lead to disqualification',
+      'Participants should perform with karaoke tracks (MP3 format) that must be sent to the event coordinators at least the day before the event',
+      'No pre-recorded main vocals are allowed in karaoke tracks',
+      'Teams must be ready backstage 15 minutes before their slot',
+      'The judges\' decision will be final and binding'
     ]
   },
   'final-whistle': {
-    title: 'The Final Whistle - E-Football Tournament',
+    title: 'The Final Whistle - eFootball Tournament (SB College Students Only)',
     fee: '₹100 per person',
     prizes: [
       { position: '1st Prize', amount: '₹2,000' },
@@ -1779,13 +1796,11 @@ const rulesData = {
       'Extra time and penalty must be ON',
       'Condition/form of players should be random',
       'Maximum of 5 double booster card is allowed, including highlights - showtime, epic, epic - big time',
-      "If opponent doesn't respond on time then the other opponent will be considered winner by walkover",
+      'If opponent doesn\'t respond on time then the other opponent will be considered winner by walkover',
       'No backpass game is allowed (if player has video proof then it will be considered as walkover)',
-      'If there is any other issues DM admin and take the screenshot of issues and send to admin for further decision making (in that case admin decision will be final)',
+      'If there are any other issues DM admin and take the screenshot of issues and send to admin for further decision making (admin decision will be final)',
       'Further details will be informed through WhatsApp groups created for the event',
-      '**Result Submission Guidelines:**',
-      '- Take the screenshot of match score and send to the admin',
-      '- Type the names of both winner and loser along with the screenshot'
+      'Result Submission: Take the screenshot of match score and send to the admin with names of both winner and loser along with the screenshot'
     ]
   },
   'breaking-bids': {
@@ -1802,16 +1817,16 @@ const rulesData = {
       'Minimum 2 and maximum 4 participants are allowed per team',
       'Registration fee is ₹800 per team',
       'The event will be open to all UG and PG students',
-      'There will be two rounds, a preliminary screening test comprising of cricket based questions and aptitude questions and the auction round',
-      'In case of a tie in the preliminary round, a tie-breaker round will be arranged to decide the qualifying teams to auction round',
+      'There will be two rounds: a preliminary screening test (cricket-based and aptitude questions) and the auction round',
+      'In case of a tie in the preliminary round, a tie-breaker round will be arranged to decide the qualifying teams to the auction round',
       'Ten teams will participate in the auction round (Final round)',
-      'All participants must bring their college id cards',
-      'Rating based auction will be conducted in the auction round',
-      'Cross college participation is allowed for teams',
+      'All participants must bring their college ID cards',
+      'Rating-based auction will be conducted in the auction round',
+      'Cross-college participation is allowed for teams',
       'The decisions of the auctioneer will be final',
       'Misconduct or unsportsmanlike behavior may result in immediate disqualification of the team',
       'Each team will be given a fixed budget for the auction round; exceeding the budget will lead to disqualification',
-      'Use of any electronic gadgets including smartwatches, mobile phones, etc during the rounds is strictly prohibited'
+      'Use of any electronic gadgets including smartwatches, mobile phones, etc. during the rounds is strictly prohibited'
     ]
   },
   'infinity-frames': {
@@ -1824,22 +1839,22 @@ const rulesData = {
     faculty: 'Mr. Deepak Sebastian - 9847390714',
     student: 'Adharsh Baiju - 9544712562',
     rules: [
-      'The registration fee for contestants will be Rs.150/head',
+      'The registration fee for contestants will be ₹150 per head',
       'College ID card is mandatory for competing students',
       'Pre-registration and spot registration facility is available for students from registered colleges',
       'Contestants can take photos using their mobile phones',
-      'The photo taken by the contestants must not be edited, otherwise it may be disqualified',
+      'The photo taken by the contestants must not be edited; otherwise it may be disqualified',
       'The time limit for the photography competition is 2 hours',
       'The theme will be given only after registration',
       'Contestants are only allowed to take photos from inside the college campus',
-      'Contestants must take photos in portrait mode and must upload it in the pre-given email id in .jpeg format',
+      'Contestants must take photos in portrait mode and must upload it to the pre-given email ID in .jpeg format',
       'Only one photo per participant is allowed',
       'Images will be judged according to their artistic merit, inventiveness, and thematic relevance',
-      "The judges decision will be final and binding"
+      'The judges\' decision will be final and binding'
     ]
   },
   'wolf-street-wizards': {
-    title: 'Wolf Street Wizards - Product Launch (Exclusively for Higher Secondary Students)',
+    title: 'Wolf Street Wizards - Product Launch (Higher Secondary Students)',
     fee: '₹150 per head',
     prizes: [
       { position: '1st Prize', amount: '₹5,000' },
@@ -1852,7 +1867,7 @@ const rulesData = {
       'No phones, tablets, or digital devices are allowed during rounds',
       'Teams must complete tasks within the allocated time. Any submission after the time ends may not be considered',
       'Each team is responsible for carrying basic stationery (pens, pencils, notebooks)',
-      'Teams must work independently - no collaboration with other teams',
+      'Teams must work independently — no collaboration with other teams',
       'All submissions (sketches, posters, pitches) must be original and created during the event',
       'Teams arriving late may have time reduced at the discretion of the coordinators',
       'Coordinators have the right to modify or adjust rules in case of unforeseen circumstances',
@@ -1862,7 +1877,7 @@ const rulesData = {
       'Only materials provided or allowed by the coordinators can be used. Unauthorized items may lead to disqualification',
       'Teams should maintain professionalism and sportsmanship towards other teams, judges, and coordinators. Misbehavior may result in penalties',
       'Presentation Order: Teams will draw lots to determine the presentation order for each round. No switching of order is allowed without coordinator approval',
-      "Judges' decisions are final and binding"
+      'Judges\' decisions are final and binding'
     ]
   }
 };
@@ -1933,5 +1948,41 @@ function scrollToSection(sectionId) {
   }
 }
 </script>
+
+<!-- Instagram Footer -->
+<footer class="insta-footer">
+  <span id="instagram-message"></span><a href="https://www.instagram.com/ezpero3.o?igsh=MWl5OG03bHBvYWE4Zw==" class="insta-icon" aria-label="Follow us on Instagram">
+    <svg viewBox="0 0 448 512" width="56" height="56" role="img" aria-hidden="true">
+      <defs>
+        <linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f58529"/>
+          <stop offset="25%" stop-color="#feda77"/>
+          <stop offset="50%" stop-color="#dd2a7b"/>
+          <stop offset="75%" stop-color="#8134af"/>
+          <stop offset="100%" stop-color="#515bd4"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#igGrad)"
+        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9
+           114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7
+           s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3
+           c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9
+           26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9S356 33.7 320.1 32
+           c-36.2-1.7-144.8-1.7-181 0-35.9 1.7-67.7 9.9-93.9 36.2S33.7 156 32 191.9
+           c-1.7 36.2-1.7 144.8 0 181 1.7 35.9 9.9 67.7 36.2 93.9s58 34.5 93.9 36.2
+           c36.2 1.7 144.8 1.7 181 0 35.9-1.7 67.7-9.9 93.9-36.2s34.5-58 36.2-93.9
+           c1.7-36.2 1.7-144.8 0-181zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9
+           s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1
+           s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9
+           s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1
+           s2.7 102.7-9 132.1z"/>
+    </svg>
+  </a>
+  <div class="insta-label">
+    <div>Follow our Instagram Page for more Updates</div>
+    <div>See you all at&nbsp;ESPERO&nbsp;3.0!</div>
+  </div>
+</footer>
+
 </body>
 </html> 
